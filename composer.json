@@ -1,0 +1,36 @@
+{
+    "name": "webmax/velma-client",
+    "description": "Velma PHP client built with Guzzle",
+    "keywords": ["velma", "marketing", "webmax"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frank Bardon Jr.",
+            "email": "frankbardon@gmail.com"
+        },
+        {
+            "name": "Kyle McCloskey",
+            "email": "kyle.mccloskey@webmaxco.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Webmax\\VelmaClient\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "guzzlehttp/guzzle": "~6.2",
+        "jms/serializer": "~0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8 || ~5.2",
+        "mockery/mockery": "~0.9"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

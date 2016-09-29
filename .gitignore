@@ -1,0 +1,5 @@
+.DS_Store
+/vendor
+/phpunit.xml
+/coverage
+/coverage.xml
