@@ -6,6 +6,7 @@ namespace Webmax\VelmaClient\Model;
  * Velma response model
  *
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
+ * @todo Fully unit test.
  */
 class VelmaResponse
 {
@@ -30,7 +31,7 @@ class VelmaResponse
     /**
      * Test if response was a failure
      *
-     * @return boolean 
+     * @return boolean
      */
     public function isFailure()
     {
