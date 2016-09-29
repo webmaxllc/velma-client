@@ -8,6 +8,7 @@ use JsonSerializable;
  * Velma contact model
  *
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
+ * @todo Fully unit test.
  */
 class Contact implements JsonSerializable
 {

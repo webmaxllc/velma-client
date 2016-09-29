@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Webmax\VelmaClient\CommandPacket | Velma API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Webmax.html">
+						Webmax<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Webmax.VelmaClient.html">
+						VelmaClient<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Webmax.VelmaClient.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Webmax.VelmaClient.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Webmax.VelmaClient.CommandPacket.html">CommandPacket</a></li>
+				<li><a href="class-Webmax.VelmaClient.VelmaClient.html">VelmaClient</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Webmax.VelmaClient.html" title="Summary of Webmax\VelmaClient"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+				<li>
+					<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+						<span>Todo</span>
+					</a>
+				</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="-API-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class CommandPacket</h1>
+
+
+	<div class="description">
+	<p>Command packet builder</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Webmax\VelmaClient\CommandPacket</span></b>			
+			 implements 
+<span>JsonSerializable</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Webmax.html">Webmax</a>\<a href="namespace-Webmax.VelmaClient.html">VelmaClient</a><br>
+		
+
+				<b>Author:</b>
+				Frank Bardon Jr. <a href="&#x6d;&#x61;&#105;&#108;t&#x6f;&#x3a;&#102;&#114;&#97;&#x6e;&#x6b;&#98;&#97;&#114;&#x64;&#x6f;&#x6e;&#64;&#103;m&#x61;&#x69;&#108;&#46;c&#x6f;&#x6d;">&#102;&#114;&#97;&#x6e;&#x6b;&#98;&#97;&#114;&#x64;&#x6f;&#x6e;&#64;&#103;m&#x61;&#x69;&#108;&#46;c&#x6f;&#x6d;</a><br>
+				<b>Todo:</b>
+				Fully unit test.<br>
+			<b>Located at</b> <a href="source-class-Webmax.VelmaClient.CommandPacket.html#9-465" title="Go to source code">CommandPacket.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#36-60" title="Go to source code">__construct</a>( <span>string <var>$sponsorName</var></span>, <span>string <var>$sponsorKey</var></span>, <span>string <var>$clientKey</var></span>, <span>string <var>$type</var> = <code><a href="class-Webmax.VelmaClient.CommandPacket.html#TYPE_EMAIL">Webmax\VelmaClient\CommandPacket::<b>TYPE_EMAIL</b></a></code></span>, <span>string <var>$version</var> = <code><a href="class-Webmax.VelmaClient.CommandPacket.html#DEFAULT_VERSION">Webmax\VelmaClient\CommandPacket::<b>DEFAULT_VERSION</b></a></code></span>, <span>string|integer|null <var>$jobUniqueId</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+		<div class="description short">
+			<p>Constructor</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sponsorName</var></dt>
+					<dd></dd>
+					<dt><var>$sponsorKey</var></dt>
+					<dd></dd>
+					<dt><var>$clientKey</var></dt>
+					<dd></dd>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+					<dt><var>$version</var></dt>
+					<dd></dd>
+					<dt><var>$jobUniqueId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getVersion" id="_getVersion">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getVersion">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#62-70" title="Go to source code">getVersion</a>( )</code>
+
+		<div class="description short">
+			<p>Get API version</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get API version</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#72-80" title="Go to source code">getType</a>( )</code>
+
+		<div class="description short">
+			<p>Get command packet type</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get command packet type</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCallbackUri" id="_getCallbackUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCallbackUri">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#82-90" title="Go to source code">getCallbackUri</a>( )</code>
+
+		<div class="description short">
+			<p>Get callback URI</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get callback URI</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCallbackUri" id="_setCallbackUri">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCallbackUri">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#92-103" title="Go to source code">setCallbackUri</a>( <span>string <var>$callbackUri</var></span> )</code>
+
+		<div class="description short">
+			<p>Set callback URI</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set callback URI</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$callbackUri</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getJobUniqueId" id="_getJobUniqueId">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getJobUniqueId">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#105-113" title="Go to source code">getJobUniqueId</a>( )</code>
+
+		<div class="description short">
+			<p>Get job's unique id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get job's unique id</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSponsorName" id="_getSponsorName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSponsorName">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#115-123" title="Go to source code">getSponsorName</a>( )</code>
+
+		<div class="description short">
+			<p>Get sponsor name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get sponsor name</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSponsorKey" id="_getSponsorKey">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSponsorKey">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#125-133" title="Go to source code">getSponsorKey</a>( )</code>
+
+		<div class="description short">
+			<p>Get sponsor key</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get sponsor key</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getClientKey" id="_getClientKey">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getClientKey">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#135-143" title="Go to source code">getClientKey</a>( )</code>
+
+		<div class="description short">
+			<p>Get client key</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get client key</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEmailSubject" id="_getEmailSubject">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEmailSubject">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#145-155" title="Go to source code">getEmailSubject</a>( )</code>
+
+		<div class="description short">
+			<p>Get email subject (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get email subject (only for email type packets)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEmailSubject" id="_setEmailSubject">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setEmailSubject">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#157-169" title="Go to source code">setEmailSubject</a>( <span>string <var>$emailSubject</var></span> )</code>
+
+		<div class="description short">
+			<p>Set email subject (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set email subject (only for email type packets)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$emailSubject</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFromName" id="_getFromName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFromName">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#171-181" title="Go to source code">getFromName</a>( )</code>
+
+		<div class="description short">
+			<p>Get email from name (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get email from name (only for email type packets)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFromName" id="_setFromName">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFromName">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#183-195" title="Go to source code">setFromName</a>( <span>string <var>$fromName</var></span> )</code>
+
+		<div class="description short">
+			<p>Set email from name (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set email from name (only for email type packets)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromName</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFromEmail" id="_getFromEmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFromEmail">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#197-207" title="Go to source code">getFromEmail</a>( )</code>
+
+		<div class="description short">
+			<p>Get from email (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get from email (only for email type packets)</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFromEmail" id="_setFromEmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFromEmail">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#209-221" title="Go to source code">setFromEmail</a>( <span>string <var>$fromEmail</var></span> )</code>
+
+		<div class="description short">
+			<p>Set from email (only for email type packets)</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set from email (only for email type packets)</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fromEmail</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProductId" id="_getProductId">
+
+		<td class="attributes"><code>
+			 public 
+
+			string|integer|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProductId">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#223-231" title="Go to source code">getProductId</a>( )</code>
+
+		<div class="description short">
+			<p>Get product id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get product id</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string|integer|null
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProductId" id="_setProductId">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProductId">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#233-244" title="Go to source code">setProductId</a>( <span>string|integer <var>$productId</var></span> )</code>
+
+		<div class="description short">
+			<p>Set product id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set product id</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$productId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProductTemplate" id="_getProductTemplate">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProductTemplate">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#246-254" title="Go to source code">getProductTemplate</a>( )</code>
+
+		<div class="description short">
+			<p>Get product template</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get product template</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setProductTemplate" id="_setProductTemplate">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setProductTemplate">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#256-267" title="Go to source code">setProductTemplate</a>( <span>string <var>$productTemplate</var></span> )</code>
+
+		<div class="description short">
+			<p>Set product template</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set product template</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$productTemplate</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getContacts" id="_getContacts">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getContacts">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#269-277" title="Go to source code">getContacts</a>( )</code>
+
+		<div class="description short">
+			<p>Get all contacts</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get all contacts</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasContact" id="_hasContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasContact">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#279-288" title="Go to source code">hasContact</a>( <span><code><a href="class-Webmax.VelmaClient.Model.Contact.html">Webmax\VelmaClient\Model\Contact</a></code> <var>$contact</var></span> )</code>
+
+		<div class="description short">
+			<p>Test if contact is present</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test if contact is present</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$contact</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addContact" id="_addContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addContact">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#290-303" title="Go to source code">addContact</a>( <span><code><a href="class-Webmax.VelmaClient.Model.Contact.html">Webmax\VelmaClient\Model\Contact</a></code> <var>$contact</var></span> )</code>
+
+		<div class="description short">
+			<p>Add contact to contacts array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add contact to contacts array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$contact</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeContact" id="_removeContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeContact">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#305-319" title="Go to source code">removeContact</a>( <span><code><a href="class-Webmax.VelmaClient.Model.Contact.html">Webmax\VelmaClient\Model\Contact</a></code> <var>$contact</var></span> )</code>
+
+		<div class="description short">
+			<p>Remove contact from contacts array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Remove contact from contacts array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$contact</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createContact" id="_createContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createContact">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#321-337" title="Go to source code">createContact</a>( <span>string <var>$firstName</var></span>, <span>string <var>$lastName</var></span>, <span>string <var>$email</var></span>, <span>string|null <var>$callbackUrl</var> = <span class="php-keyword1">null</span></span>, <span>string|integer|null <var>$appUniqueId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Contact creation convenience method</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Contact creation convenience method</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$firstName</var></dt>
+					<dd></dd>
+					<dt><var>$lastName</var></dt>
+					<dd></dd>
+					<dt><var>$email</var></dt>
+					<dd></dd>
+					<dt><var>$callbackUrl</var></dt>
+					<dd></dd>
+					<dt><var>$appUniqueId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUserVariables" id="_getUserVariables">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUserVariables">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#339-347" title="Go to source code">getUserVariables</a>( )</code>
+
+		<div class="description short">
+			<p>Get all user variables</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get all user variables</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getUserVariable" id="_getUserVariable">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getUserVariable">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#349-363" title="Go to source code">getUserVariable</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Get a single user variable</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a single user variable</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasUserVariable" id="_hasUserVariable">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasUserVariable">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#365-374" title="Go to source code">hasUserVariable</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Test for presence of a user variables</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test for presence of a user variables</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addUserVariable" id="_addUserVariable">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addUserVariable">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#376-388" title="Go to source code">addUserVariable</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			<p>Add a user variable to the user variables array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a user variable to the user variables array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeUserVariable" id="_removeUserVariable">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeUserVariable">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#390-403" title="Go to source code">removeUserVariable</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			<p>Remove user variable from the user variables array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Remove user variable from the user variables array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Webmax.VelmaClient.CommandPacket.html">Webmax\VelmaClient\CommandPacket</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="jsonSerialize" id="_jsonSerialize">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_jsonSerialize">#</a>
+		<code><a href="source-class-Webmax.VelmaClient.CommandPacket.html#418-464" title="Go to source code">jsonSerialize</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code>JsonSerializable::jsonSerialize()</code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="DEFAULT_VERSION" id="DEFAULT_VERSION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Webmax.VelmaClient.CommandPacket.html#17" title="Go to source code"><b>DEFAULT_VERSION</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#DEFAULT_VERSION" class="anchor">#</a>
+				<code><span class="php-quote">'1.5'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="TYPE_EMAIL" id="TYPE_EMAIL">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Webmax.VelmaClient.CommandPacket.html#18" title="Go to source code"><b>TYPE_EMAIL</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#TYPE_EMAIL" class="anchor">#</a>
+				<code><span class="php-quote">'email'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Velma API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@ use Webmax\VelmaClient\Exception\BadPacketDefinitionException;
  * Command packet builder
  *
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
+ * @todo Fully unit test.
  */
 class CommandPacket implements JsonSerializable
 {

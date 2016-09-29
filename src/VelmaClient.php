@@ -13,6 +13,7 @@ use Webmax\VelmaClient\CommandPacket;
  * Velma API client
  *
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
+ * @todo Fully unit test.
  */
 class VelmaClient
 {
