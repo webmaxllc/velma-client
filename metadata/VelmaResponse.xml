@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<serializer>
+  <class name="Webmax\VelmaClient\Model\VelmaResponse" exclusion-policy="ALL">
+    <property name="code" seralized-name="code" type="string" expose="true" />
+    <property name="status" seralized-name="status" type="string" expose="true" />
+    <property name="message" seralized-name="message" type="string" expose="true" />
+    <property name="jobid" seralized-name="jobid" type="string" expose="true" />
+  </class>
+</serializer>
