@@ -1,0 +1,44 @@
+{
+    "version": "1.5",
+    "type": "email",
+    "callbackUri": "https://api.vfs.velma.com/test/capture/json",
+    "jobuniqueid": "XXX666XXX",
+    "sponsor": {
+        "id": "1",
+        "name": "Velma"
+    },
+    "authentication": {
+        "sponsorkey": "bfa956380ea742ae8ff62e76da345c77",
+        "clientkey": "e705a462d44046918ac2619fd1707da8"
+    },
+    "email": {
+        "subject": "Web Max Test Email",
+        "from" : {
+            "name": "Frank Bardon Jr.",
+            "email": "frank.bardon+1@webmaxco.com"
+        }
+    },
+    "user": {
+         "appuniqueid": "2456",
+         "fullname": "John Public",
+         "fulladdress": "5465 E. Terra Linda Way",
+         "email":"john.public@velma.com",
+         "title": "Loan Officer",
+         "photo": "http://watcholympics2016online.com/wp-content/uploads/2016/07/Ten-Reasons-to-Watch-the-2016-Olympics.jpg",
+         "disclaimer": "My Disclaimer that trys not too confuse you too much."
+    },
+    "product": {
+        "id": "custom",
+        "template": "https://s3-us-west-2.amazonaws.com/vfs-assets/user/VFS/VFS_Email_Sample.htm?versionId=7IGs.y5vLI9qPIBBerxWlbtEkqIlifIp"
+    },
+    "contact": [
+        {
+            "appuniqueid": "26535",
+            "callbackUrl": "https://api.vfs.velma.com/vd/capture/json",
+            "firstname": "Frank",
+            "lastname": "Bardon",
+            "name": "Frank Bardon",
+            "email": "frank.bardon@webmaxco.com"
+        }
+    ]
+}
