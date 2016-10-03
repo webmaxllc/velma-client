@@ -1,8 +1,8 @@
 Velma API client
 ================
 
-- [![Build Status](https://travis-ci.org/webmax/simply-rets-api.svg?branch=master)](https://travis-ci.org/webmax/simply-rets-api) master
-- [![Build Status](https://travis-ci.org/webmax/simply-rets-api.svg?branch=1.0)](https://travis-ci.org/webmax/simply-rets-api) 1.0
+- [![Build Status](https://travis-ci.org/webmax/velma-client.svg?branch=master)](https://travis-ci.org/webmax/velma-client) master
+- [![Build Status](https://travis-ci.org/webmax/velma-client.svg?branch=1.0)](https://travis-ci.org/webmax/velma-client) 1.0
 
 The Velma API client is a PHP library which provides simplified access to
 the [Velma API](http://readme.velma.com) and the data it returns.
