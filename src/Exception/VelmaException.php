@@ -3,7 +3,7 @@
 namespace Webmax\VelmaClient\Exception;
 
 /**
- * Velma base exception
+ * Base Velma client exception
  *
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
  */
