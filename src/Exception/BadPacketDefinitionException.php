@@ -11,7 +11,7 @@ use BadMethodCallException;
  * @author Frank Bardon Jr. <frankbardon@gmail.com>
  * @todo Fully unit test.
  */
-class BadPacketDefinitionException extends BadMethodCallException
+class BadPacketDefinitionException extends BadMethodCallException implements VelmaException
 {
     /**
      * Exception constructor

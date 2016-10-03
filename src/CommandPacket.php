@@ -17,6 +17,23 @@ class CommandPacket implements JsonSerializable
     const DEFAULT_VERSION = '1.5';
     const TYPE_EMAIL = 'email';
 
+    /**
+     * Static constructor
+     *
+     * @return self
+     */
+    public static function create(
+        $sponsorName,
+        $sponsorKey,
+        $clientKey,
+        $type = null,
+        $version = null,
+        $jobUniqueId = null
+    ) {
+        return new self($sponsorName, $sponsorKey, $clientKey, $type, $version, $jobUniqueId);
+    }
+
+
     private $version;
     private $type;
     private $callbackUri;
@@ -47,15 +64,15 @@ class CommandPacket implements JsonSerializable
         $sponsorName,
         $sponsorKey,
         $clientKey,
-        $type = self::TYPE_EMAIL,
-        $version = self::DEFAULT_VERSION,
+        $type = null,
+        $version = null,
         $jobUniqueId = null
     ) {
         $this->sponsorName = $sponsorName;
         $this->sponsorKey = $sponsorKey;
         $this->clientKey = $clientKey;
-        $this->type = $type;
-        $this->version = $version;
+        $this->type = $type ?: self::TYPE_EMAIL;
+        $this->version = $version ?: self::DEFAULT_VERSION;
         $this->jobUniqueId = $jobUniqueId ?: sha1(microtime(true));
     }
 
@@ -343,7 +360,7 @@ class CommandPacket implements JsonSerializable
      */
     public function getUserVariables()
     {
-        return $this->variables;
+        return $this->userVariables;
     }
 
     /**
