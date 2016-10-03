@@ -8,6 +8,7 @@ use GuzzleHttp\ClientInterface;
 use JMS\Serializer\SerializerInterface;
 use JMS\Serializer\SerializerBuilder;
 use Webmax\VelmaClient\CommandPacket;
+use Webmax\VelmaClient\Model\VelmaResponse;
 
 /**
  * Velma API client
@@ -45,8 +46,25 @@ class VelmaClient
      */
     private $serializerCacheDirectory;
 
+    /**
+     * Velma sponsor
+     *
+     * @var string
+     */
     private $sponsor;
+
+    /**
+     * Velma sponsor key
+     *
+     * @var string
+     */
     private $sponsorKey;
+
+    /**
+     * Velma client key
+     *
+     * @var string
+     */
     private $clientKey;
 
     /**
@@ -83,6 +101,12 @@ class VelmaClient
         $this->client = new GuzzleClient($config);
     }
 
+    /**
+     * Send a Velma command packet
+     *
+     * @param CommandPacket $cp
+     * @return VelmaResponse
+     */
     public function sendCommandPacket(CommandPacket $cp)
     {
         $response = $this->client->request('POST', 'job', array(
